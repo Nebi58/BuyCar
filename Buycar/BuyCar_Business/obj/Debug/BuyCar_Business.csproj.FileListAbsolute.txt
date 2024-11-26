@@ -1,0 +1,13 @@
+C:\Users\ucarn\OneDrive\Masaüstü\Buycar\BuyCar_Business\bin\Debug\BuyCar_Business.dll
+C:\Users\ucarn\OneDrive\Masaüstü\Buycar\BuyCar_Business\bin\Debug\BuyCar_Business.pdb
+C:\Users\ucarn\OneDrive\Masaüstü\Buycar\BuyCar_Business\bin\Debug\BuyCar_DataAccess.dll
+C:\Users\ucarn\OneDrive\Masaüstü\Buycar\BuyCar_Business\bin\Debug\BuyCar_DataAccess.pdb
+C:\Users\ucarn\OneDrive\Masaüstü\Buycar\BuyCar_Business\obj\Debug\BuyCar_Business.csproj.AssemblyReference.cache
+C:\Users\ucarn\OneDrive\Masaüstü\Buycar\BuyCar_Business\obj\Debug\BuyCar_Business.csproj.CoreCompileInputs.cache
+C:\Users\ucarn\OneDrive\Masaüstü\Buycar\BuyCar_Business\obj\Debug\BuyCar_Business.csproj.CopyComplete
+C:\Users\ucarn\OneDrive\Masaüstü\Buycar\BuyCar_Business\obj\Debug\BuyCar_Business.dll
+C:\Users\ucarn\OneDrive\Masaüstü\Buycar\BuyCar_Business\obj\Debug\BuyCar_Business.pdb
+C:\Users\ucarn\OneDrive\Masaüstü\Buycar\BuyCar_Business\bin\Debug\Guna.UI2.dll
+C:\Users\ucarn\OneDrive\Masaüstü\Buycar\BuyCar_Business\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ucarn\OneDrive\Masaüstü\Buycar\BuyCar_Business\bin\Debug\itextsharp.dll
+C:\Users\ucarn\OneDrive\Masaüstü\Buycar\BuyCar_Business\bin\Debug\itextsharp.xml

@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12F31338-9F06-4BD3-ACCB-5C044F1AFE65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Buycar</RootNamespace>
+    <AssemblyName>Buycar</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.5.1.7\lib\net35-Client\ZedGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph.Web, Version=5.1.5.29221, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.Web.5.1.5\lib\ZedGraph.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_AddCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AddCars.Designer.cs">
+      <DependentUpon>Admin_AddCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_SaledCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_SaledCars.Designer.cs">
+      <DependentUpon>Admin_SaledCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Designer\Audi_Designer1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Designer\Audi_Designer1.Designer.cs">
+      <DependentUpon>Audi_Designer1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Designer\Audi_Designer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Designer\Audi_Designer2.Designer.cs">
+      <DependentUpon>Audi_Designer2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Designer\BMW_Designer1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Designer\BMW_Designer1.Designer.cs">
+      <DependentUpon>BMW_Designer1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Designer\BMW_Designer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Designer\BMW_Designer2.Designer.cs">
+      <DependentUpon>BMW_Designer2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrokenCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrokenCar.Designer.cs">
+      <DependentUpon>BrokenCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuyCar_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyCar_Admin.Designer.cs">
+      <DependentUpon>BuyCar_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Import.Designer.cs">
+      <DependentUpon>Car_Import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Page\BuyCar_Audi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Page\BuyCar_Audi.Designer.cs">
+      <DependentUpon>BuyCar_Audi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Page2\BuyCar_Audi2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Page2\BuyCar_Audi2.Designer.cs">
+      <DependentUpon>BuyCar_Audi2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Page2\BuyCar_BMW2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Page2\BuyCar_BMW2.Designer.cs">
+      <DependentUpon>BuyCar_BMW2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuyCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyCar.Designer.cs">
+      <DependentUpon>BuyCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuyCarMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyCarMain.Designer.cs">
+      <DependentUpon>BuyCarMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Page\BuyCar_BMW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Page\BuyCar_BMW.Designer.cs">
+      <DependentUpon>BuyCar_BMW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Page\BuyCar_Ford.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Page\BuyCar_Ford.Designer.cs">
+      <DependentUpon>BuyCar_Ford.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Page2\BuyCar_Ford2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Page2\BuyCar_Ford2.Designer.cs">
+      <DependentUpon>BuyCar_Ford2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Page\BuyCar_Mercedes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Page\BuyCar_Mercedes.Designer.cs">
+      <DependentUpon>BuyCar_Mercedes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Page2\BuyCar_Mercedes2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Page2\BuyCar_Mercedes2.Designer.cs">
+      <DependentUpon>BuyCar_Mercedes2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Designer\Ford_Designer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Designer\Ford_Designer2.Designer.cs">
+      <DependentUpon>Ford_Designer2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Designer\Ford_Designer1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Designer\Ford_Designer1.Designer.cs">
+      <DependentUpon>Ford_Designer1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Designer\Mercedes_Designer1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Designer\Mercedes_Designer1.Designer.cs">
+      <DependentUpon>Mercedes_Designer1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Designer\mercedes_designer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Designer\mercedes_designer2.Designer.cs">
+      <DependentUpon>mercedes_designer2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Property.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Property.Designer.cs">
+      <DependentUpon>Car_Property.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyCars.Designer.cs">
+      <DependentUpon>MyCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BuyCar_SignLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyCar_SignLog.Designer.cs">
+      <DependentUpon>BuyCar_SignLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quit.Designer.cs">
+      <DependentUpon>Quit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Car.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Car.Designer.cs">
+      <DependentUpon>Search_Car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Car2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Car2.Designer.cs">
+      <DependentUpon>Search_Car2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZedGraph_DeletedMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZedGraph_DeletedMember.Designer.cs">
+      <DependentUpon>ZedGraph_DeletedMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZedGraph_MyMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZedGraph_MyMember.Designer.cs">
+      <DependentUpon>ZedGraph_MyMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZedGraph_SaledCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZedGraph_SaledCars.Designer.cs">
+      <DependentUpon>ZedGraph_SaledCars.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_AddCars.resx">
+      <DependentUpon>Admin_AddCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_SaledCars.resx">
+      <DependentUpon>Admin_SaledCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Designer\Audi_Designer1.resx">
+      <DependentUpon>Audi_Designer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Designer\Audi_Designer2.resx">
+      <DependentUpon>Audi_Designer2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Designer\BMW_Designer1.resx">
+      <DependentUpon>BMW_Designer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Designer\BMW_Designer2.resx">
+      <DependentUpon>BMW_Designer2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrokenCar.resx">
+      <DependentUpon>BrokenCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyCar_Admin.resx">
+      <DependentUpon>BuyCar_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Import.resx">
+      <DependentUpon>Car_Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Page\BuyCar_Audi.resx">
+      <DependentUpon>BuyCar_Audi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Page2\BuyCar_Audi2.resx">
+      <DependentUpon>BuyCar_Audi2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Page2\BuyCar_BMW2.resx">
+      <DependentUpon>BuyCar_BMW2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyCar.resx">
+      <DependentUpon>BuyCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyCarMain.resx">
+      <DependentUpon>BuyCarMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Page\BuyCar_BMW.resx">
+      <DependentUpon>BuyCar_BMW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Page\BuyCar_Ford.resx">
+      <DependentUpon>BuyCar_Ford.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Page2\BuyCar_Ford2.resx">
+      <DependentUpon>BuyCar_Ford2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Page\BuyCar_Mercedes.resx">
+      <DependentUpon>BuyCar_Mercedes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Page2\BuyCar_Mercedes2.resx">
+      <DependentUpon>BuyCar_Mercedes2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Designer\Ford_Designer2.resx">
+      <DependentUpon>Ford_Designer2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Designer\Ford_Designer1.resx">
+      <DependentUpon>Ford_Designer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Designer\Mercedes_Designer1.resx">
+      <DependentUpon>Mercedes_Designer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Designer\mercedes_designer2.resx">
+      <DependentUpon>mercedes_designer2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Property.resx">
+      <DependentUpon>Car_Property.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyCars.resx">
+      <DependentUpon>MyCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BuyCar_SignLog.resx">
+      <DependentUpon>BuyCar_SignLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quit.resx">
+      <DependentUpon>Quit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Car.resx">
+      <DependentUpon>Search_Car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Car2.resx">
+      <DependentUpon>Search_Car2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZedGraph_DeletedMember.resx">
+      <DependentUpon>ZedGraph_DeletedMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZedGraph_MyMember.resx">
+      <DependentUpon>ZedGraph_MyMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZedGraph_SaledCars.resx">
+      <DependentUpon>ZedGraph_SaledCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BuyCar_Business\BuyCar_Business.csproj">
+      <Project>{717419bc-3e6e-4f77-8217-cad5bb734aac}</Project>
+      <Name>BuyCar_Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BuyCar_DataAccess\BuyCar_DataAccess.csproj">
+      <Project>{50758d77-05a3-4486-8477-611d1698278c}</Project>
+      <Name>BuyCar_DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License-LGPL.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
