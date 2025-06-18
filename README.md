@@ -65,3 +65,26 @@ Bu proje, araçların eklenmesi, listelenmesi, düzenlenmesi ve satılması gibi
 <img width="1219" alt="resim1" src="https://github.com/user-attachments/assets/89d2cc08-15f8-4c29-abf9-fb0fe5f8aa1c" />
 
 
+
+<img width="1051" alt="resim2" src="https://github.com/user-attachments/assets/e944ad13-1bc2-4177-853f-9d666bd26b86" />
+
+
+
+
+
+
+
+
+
+
+
+<img width="1123" alt="resim3" src="https://github.com/user-attachments/assets/d8af1398-5bef-49d7-8563-d1bcb3cabdbc" />
+
+
+
+
+
+
+
+<img width="1067" alt="resim4" src="https://github.com/user-attachments/assets/355b48e5-b6de-4f5c-88e8-0683d64420f3" />
+
