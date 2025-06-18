@@ -61,6 +61,30 @@ Bu proje, araçların eklenmesi, listelenmesi, düzenlenmesi ve satılması gibi
 - Katmanlı mimari ve OOP
 - Veri görselleştirme ve raporlama
 
+---
+
+## 📁 Kurulum
+
+1. Visual Studio ile projeyi açın.
+2. NuGet üzerinden eksik paketleri yükleyin (`Guna.UI2`, `iTextSharp`, `ZedGraph` vb.).
+3. `App.config` dosyasındaki veritabanı bağlantısını kendi ortamınıza göre güncelleyin.
+4. Derleyin ve çalıştırın.
+
+---
+
+## 🤝 Katkı
+
+Geri bildirim, öneri ve katkılarınızı memnuniyetle bekliyorum!
+
+---
+
+## 📬 İletişim
+
+📧 **ucarnebi3@gmail.com**  
+🔗 [nebiucar58](https://www.linkedin.com/in/nebiucar58)
+
+---
+
 ## 📸 Ekran Görüntüleri
 <img width="1219" alt="resim1" src="https://github.com/user-attachments/assets/89d2cc08-15f8-4c29-abf9-fb0fe5f8aa1c" />
 
